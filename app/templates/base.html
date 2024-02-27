@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{%block title%} PyBlog {% endblock%}</title>
+
+    <!-- Import jQuery from CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Import Tailwind CSS from CDN -->
+     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-slate-800 text-white">
+      <div class="max-w-full lg:w-[75vw] m-auto bg-transparent">
+    <nav class="bg-transparent p-4 py-6">
+      <div class="container mx-auto flex items-center justify-between">
+        <a href="#" class="text-white font-bold text-lg">iChael Blog</a>
+        <ul class="flex space-x-4">
+          <li><a href="/" class="text-white hover:underline">Home</a></li>
+          <li><a href="#" class="text-white hover:underline">About</a></li>
+          <li><a href="#" class="text-white hover:underline">Services</a></li>
+          <li><a href="#" class="text-white hover:underline">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  
+      <div class="content min-h-[100vh]">
+        {%block content%}{%endblock%}
+      </div>
+    </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script>
+       
+      $(document).ready(function () {
+        // Your jQuery code here
+      });
+    </script>
+  </body>
+</html>
